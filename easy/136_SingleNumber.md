@@ -6,8 +6,8 @@ To solve this problem, I decided to use a dictionary. First, I incremented throu
 
 Then, I checked the whole dictionary to find the value with a key of 1, which is constant time.
 
--Time complexity: O(n)
--Space complexity: O(n).
+- Time complexity: O(n)
+- Space complexity: O(n).
 
 
 ```python
@@ -34,8 +34,8 @@ class Solution(object):
 # Better Solution
 The better solution for this problem is to use XOR bit manipulation. Prior to this problem, I was unaware that XORing an array by 0 would result in each number being canceled out besides the value that appears once. This solution results in:
 
--Time complexity: O(n)
--Space complexity: O(1)
+- Time complexity: O(n)
+- Space complexity: O(1)
 
 ```python
 class Solution:
