@@ -1,6 +1,6 @@
 # 136. Single Number
 
-[https://leetcode.com/problems/single-number/?source=submission-ac](Link)
+[Link](https://leetcode.com/problems/single-number/?source=submission-ac)
 
 To solve this problem, I decided to use a dictionary. First, I incremented through the array of numbers, created a key for each number, and incremented the value
 
