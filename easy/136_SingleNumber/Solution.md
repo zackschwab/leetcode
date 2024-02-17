@@ -1,8 +1,8 @@
 # 136. Single Number
 
-[https://leetcode.com/problems/single-number/?source=submission-ac]
+[https://leetcode.com/problems/single-number/?source=submission-ac](Link)
 
-In order to solve this problem, I decided to use a dictionary. First, I incremented through the array of numbers, created a key for each number, and incremented the value
+To solve this problem, I decided to use a dictionary. First, I incremented through the array of numbers, created a key for each number, and incremented the value
 
 Then, I checked the whole dictionary to find the value with a key of 1, which is constant time.
 
