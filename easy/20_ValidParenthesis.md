@@ -5,7 +5,7 @@ For this problem, I decided to use a stack data structure. First, I created an e
 
 Once we iterate through the entire string, all we need to do is make sure the stack is empty. If the stack is not empty, then the first opening bracket was never closed, so we have to return false. Otherwise return true. 
 
-Time complexity -- O(n) since we have to iterate through the entire string once.
+Time complexity -- O(n), where n represents length of string, since we have to iterate through the entire string once.
 
 ```python
 class Solution(object):
