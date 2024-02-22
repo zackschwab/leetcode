@@ -23,11 +23,31 @@ class Solution(object):
             if ch in opening:
                 stack.append(ch)
             else:
-                if len(stack) == 0 or closing.index(ch) != opening.index(stack.pop()):
+                if not stack or closing.index(ch) != opening.index(stack.pop()):
                     return False
-
-        if len(stack) != 0:
-            return False
             
-        return True
+        return not stack
+```
+
+
+# Better Solution
+Instead of using two lists, I should have used a hashmap to optimize space and time complexity since we have to search through my two lists multiple times. 
+
+```python
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        bracket_map = {')': '(', ']': '[', '}': '{'}
+        
+        for char in s:
+            if char in bracket_map.values():
+                stack.append(char)
+            elif char in bracket_map.keys():
+                if not stack or stack.pop() != bracket_map[char]:
+                    return False
+            else:
+                return False
+        
+        return not stack
+
 ```
