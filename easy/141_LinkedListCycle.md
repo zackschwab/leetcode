@@ -1,4 +1,4 @@
-# 169 Majority Element
+# 141 LinkedListCycle
 [Link](https://leetcode.com/problems/linked-list-cycle/?envType=study-plan-v2&envId=top-interview-150)
 
 To solve this problem, I iterated through the linked list until the nextNode was null. Each iteration, check if the current node is in our hash table of nodes and if it isn't, add the currNode to the hash table. If the current node is found in the hash table, we can return true and if the loop finishes executing without finding a duplicate, return false. 
