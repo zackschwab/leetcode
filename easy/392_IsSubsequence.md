@@ -1,5 +1,5 @@
-# 392 Is Subsequence
-[Link]()
+# 392. Is Subsequence
+[Link](https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=top-interview-150)
 
 
 For this problem, I used a two pointer approach to iterate through the entire string t. During each iteration, we check if the current value in t is equal to the current value in s and if they are, we increment s. The t pointer will always be incremented. After the loop finishes executing, we can check the index of s to determine if we successfully found a subsequence. If the index of s == len(s), we know that each character was able to find a match. 
