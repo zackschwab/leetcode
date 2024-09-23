@@ -1,5 +1,5 @@
 # 61. Rotate Linked List
-[Link](https://leetcode.com/problems/guess-number-higher-or-lower/?envType=study-plan-v2&envId=leetcode-75)
+[Link](https://leetcode.com/problems/rotate-list/?envType=study-plan-v2&envId=top-interview-150)
 
 
 For this problem, I traversed the linked list to find the size and get a pointer to the tail of the linked list. Next, I used the size to traverse the linked list (size % k) - 1 times to find the new head element and a pointer to the node before it. Keep in mind, if k is divisible by the size, that means that you aren't actually rotating the array since the new head we find will be the same head. To create the new linked list, we have to remove the link between newHead and prev. Next, we have to set the tail to the old head to reconnect the list.  
